@@ -10,7 +10,14 @@
 
 5.Model.ipynb is where magic happens. It use clean.csv. Words are converted into feature vectors using count vector, TFIDF and word embeddings then these feature vectors are trained using LR,NB,SVM,RF and LSTM.
 
-6.
+6.Modeldevpickel.py and Model for Pickel.ipynb pickels the model for deployment. o/p model.pkl and cv.pkl.
+
+7.app.py is used for Deployment purpose
+
+8.templates folder contains html files and static folder contains css files.
+
+9.Final Testing.ipynb used for testing model.pkl and cv.pkl files.
+
 
 
 
