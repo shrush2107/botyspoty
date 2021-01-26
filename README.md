@@ -1,4 +1,6 @@
 # botyspoty
+This project detects bots in internet on the basis of tweets.
+
 1.Dataset1(Trolls).ipynb uses 3 million Russian troll tweets dataset https://www.kaggle.com/fivethirtyeight/russian-troll-tweets and gives bot1.csv as output. The objective of this file is to combine all 9 files and extract only English language tweets.
 
 2.Dataset2(Humans).ipynb uses humansraw.txt. O/P is human.csv. This code converts txt file --> csv file.
