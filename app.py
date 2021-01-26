@@ -34,7 +34,7 @@ def predict():
         review = [wordnet.lemmatize(word) for word in review if not word in set(stopwords.words('english'))]
         review = ' '.join(review)
         corpus.append(review)
-        corpus = cv.transform(corpus)
+        corpus = cv.transform(corpus).toarray()
         pred=model.predict(corpus)
     return render_template('result.html', prediction = pred)
     
