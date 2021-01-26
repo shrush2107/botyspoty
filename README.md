@@ -20,6 +20,7 @@ This project detects bots in internet on the basis of tweets.
 
 9.Final Testing.ipynb used for testing model.pkl and cv.pkl files.
 
+10.Procfile is used for determining where the app start from.
 
 
 
