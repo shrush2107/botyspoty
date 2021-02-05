@@ -23,4 +23,5 @@ This project detects bots in internet on the basis of tweets.
 10.Procfile is used for determining where the app start from.
 
 
+Deployment Link: https://botyspoty.herokuapp.com/
 
