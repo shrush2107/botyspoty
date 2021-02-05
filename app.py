@@ -24,19 +24,8 @@ def home():
 def predict(): 
     if request.method == 'POST':
         message = request.form['message']
-        def prepro(review):
-            wordnet = WordNetLemmatizer()
-            corpus = []
-            review = re.sub(r"(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)|^rt|http.+?", '', review)
-            review = re.sub(r"\d+", '', review)
-            review = review.lower()
-            review= nltk.word_tokenize(review)
-            review = [wordnet.lemmatize(word) for word in review if not word in set(stopwords.words('english'))]
-            review = ' '.join(review)
-            corpus.append(review)
-            return corpus
-        corpus=prepro(message)
-        corpus = cv.transform(corpus)
+        review=[message]
+        corpus = cv.transform(review).toarray()
         pred=model.predict(corpus)
     return render_template('result.html', prediction = pred)
     
